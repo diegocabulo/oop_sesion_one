@@ -28,10 +28,12 @@ public class BankAccount {
     public void add(Float moneyAdd){
         Float totalMoneyToAdd = getBalanceAccount() + moneyAdd;
         setBalanceAccount(totalMoneyToAdd);
+        System.out.println("Current Balance: $ "+ getBalanceAccount()+"\n");
     }
 
     public void withdraw(Float withdrawMoney){
         Float totalMoneyToWithdraw = getBalanceAccount() - withdrawMoney;
         setBalanceAccount(totalMoneyToWithdraw);
+        System.out.println("Your Current Balance: $ "+ getBalanceAccount()+"\n");
     }
 }
